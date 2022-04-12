@@ -48,6 +48,12 @@ Como resultado, você terá um código bastante sujo, repleto de condicionais qu
   O código que usa o método fábrica (geralmente chamado de código cliente) não vê diferença entre os produtos reais retornados por várias subclasses. O cliente trata todos os produtos como um Transporte abstrato. O cliente sabe que todos os objetos de transporte devem ter o método entregar, mas como exatamente ele funciona não é importante para o cliente.
 
   ## Quando devemos aplicar?
+
+  - O Factory Method deve ser usado quando não se sabe a priori os tipos e dependências exatas dos objetos com os quais seu código deve funcionar.
+
+  - Também é indicado usar o Factory Method quando desejar fornecer aos usuários da sua biblioteca ou framework uma maneira de estender seus componentes internos.
+
+  - Busca de uma melhor qualidade de código. 
   
 </details>
 
