@@ -40,11 +40,12 @@ Como resultado, você terá um código bastante sujo, repleto de condicionais qu
 
   ## Solução
 
-    O padrão Factory Method sugere que você substitua chamadas diretas de construção de objetos por chamadas para um método **fábrica** especial,
-os objetos retornados desse método  geralmente são chamados de **produtos**.
-Com isso, podemos sobrescrever o método fábrica em uma subclasse e alterar a classe de produtos que estão sendo criados pelo método.
-Porém, há uma pequena limitação: as subclasses só podem retornar tipos diferentes de produtos se esses produtos tiverem uma classe ou interface base em comum.
-Além disso, o método fábrica na classe base deve ter seu tipo de retorno declarado como essa interface.
+  O padrão Factory Method sugere que você substitua chamadas diretas de construção de objetos por chamadas para um método **fábrica** especial, os objetos retornados desse método  geralmente são chamados de **produtos**.
+  Com isso, podemos sobrescrever o método fábrica em uma subclasse e alterar a classe de produtos que estão sendo criados pelo método. Porém, há uma pequena limitação: as subclasses só podem retornar tipos diferentes de produtos se esses produtos tiverem uma classe ou interface base em comum. Além disso, o método fábrica na classe base deve ter seu tipo de retorno declarado como essa interface.
+
+  ![](https://refactoring.guru/images/patterns/diagrams/factory-method/structure.png)
+
+  O código que usa o método fábrica (geralmente chamado de código cliente) não vê diferença entre os produtos reais retornados por várias subclasses. O cliente trata todos os produtos como um Transporte abstrato. O cliente sabe que todos os objetos de transporte devem ter o método entregar, mas como exatamente ele funciona não é importante para o cliente.
 
   ## Quando devemos aplicar?
   
