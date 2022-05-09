@@ -60,6 +60,15 @@ Como resultado, você terá um código bastante sujo, repleto de condicionais qu
 <details>
   <summary>Padrões estruturais</summary>
 
+  # Adapter
+  O Adapter é um padrão de projeto estrutural que permite objetos com interfaces incompatíveis colaborarem entre si. Ou seja, como o nome propõe o Adapter ele funciona como um adaptador.
+
+  ![](https://refactoring.guru/images/patterns/content/adapter/adapter-pt-br.png?id=05f144d30c63000fbe59e09f29bb488d)
+
+  ## Problema / Motivação
+
+  Problema
+
   ## Solução
 
   Ele é um objeto especial que converte a interface de um objeto para que outro objeto possa entendê-lo.
@@ -73,6 +82,9 @@ Como resultado, você terá um código bastante sujo, repleto de condicionais qu
   Exemplo para compreender melhor o Adapter
 
   ![](https://refactoring.guru/images/patterns/content/adapter/adapter-comic-1-pt-br.png?id=a33f9306db5a3932525827fe93a9676a)
+
+  ## Quando devemos aplicar?
+  quando?
 
 </details>
 
