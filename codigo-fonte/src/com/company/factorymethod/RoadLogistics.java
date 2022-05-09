@@ -1,4 +1,4 @@
-package com.company;
+package com.company.factorymethod;
 
 import java.time.LocalDateTime;
 
@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 public class RoadLogistics extends Factory {
 
     @Override
-    Transport planDelivery() {
+    public Transport planDelivery() {
         return new Truck("Santos", "Rio de Janeiro", LocalDateTime.now());
     }
 

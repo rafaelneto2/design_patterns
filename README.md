@@ -59,7 +59,21 @@ Como resultado, você terá um código bastante sujo, repleto de condicionais qu
 
 <details>
   <summary>Padrões estruturais</summary>
-  
+
+  ## Solução
+
+  Ele é um objeto especial que converte a interface de um objeto para que outro objeto possa entendê-lo.
+
+  1) O adaptador obtém uma interface, compatível com um dos objetos existentes.
+  2) Usando essa interface, o objeto existente pode chamar os métodos do adaptador com segurança.
+  3) Ao receber a chamada, o adaptador passa o pedido para o segundo objeto, mas em um formato e ordem que o segundo objeto espera.
+
+  ![](https://refactoring.guru/images/patterns/diagrams/adapter/solution-pt-br.png?id=ffe986cb8e979f54610072f35928d04e)
+
+  Exemplo para compreender melhor o Adapter
+
+  ![](https://refactoring.guru/images/patterns/content/adapter/adapter-comic-1-pt-br.png?id=a33f9306db5a3932525827fe93a9676a)
+
 </details>
 
 <details>

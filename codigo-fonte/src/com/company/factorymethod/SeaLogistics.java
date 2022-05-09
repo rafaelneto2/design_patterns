@@ -1,12 +1,12 @@
-package com.company;
+package com.company.factorymethod;
 
 import java.time.LocalDateTime;
 
 // CONCRETE CREATOR
-class SeaLogistics extends Factory {
+public class SeaLogistics extends Factory {
 
     @Override
-    Transport planDelivery() {
+    public Transport planDelivery() {
         return new Ship("Santos", "Rio de Janeiro", LocalDateTime.now());
     }
 }

@@ -1,4 +1,4 @@
-package com.company;
+package com.company.factorymethod;
 
 // PRODUCT
 public interface Transport {
