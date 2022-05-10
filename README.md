@@ -67,7 +67,13 @@ Como resultado, você terá um código bastante sujo, repleto de condicionais qu
 
   ## Problema / Motivação
 
-  Problema
+  Imagine que você está criando uma aplicação de monitoramento do mercado de ações da bolsa. A aplicação baixa os dados das ações de múltiplas fontes em formato XML e então mostra gráficos e diagramas para o usuário.
+
+Em algum ponto, você decide melhorar a aplicação ao integrar uma biblioteca de análise de terceiros. Porém, a biblioteca só trabalha com dados em formato JSON.
+  
+  ![](https://user-images.githubusercontent.com/26224729/167524439-ff77290b-fcd1-44fc-8c77-b37820834820.png)
+
+  Você não pode usar a biblioteca “como ela está” porque ela espera os dados em um formato que é incompatível com sua aplicação.
 
   ## Solução
 
@@ -88,13 +94,6 @@ Como resultado, você terá um código bastante sujo, repleto de condicionais qu
 
   - Utilize a classe Adaptador quando você quer usar uma classe existente, mas sua interface não for compatível com o resto do seu código.
 
-  ## Prós e Contras
-  Prós
-  - Princípio de responsabilidade única. Você pode separar a conversão de interface ou de dados da lógica primária do negócio do programa.
-  - Princípio aberto/fechado. Você pode introduzir novos tipos de adaptadores no programa sem quebrar o código cliente existente, desde que eles trabalhem com os adaptadores através da interface cliente.
-  
-  Contras
-  - A complexidade geral do código aumenta porque você precisa introduzir um conjunto de novas interfaces e classes. Algumas vezes é mais simples mudar a classe serviço para que ela se adeque com o resto do seu código.
 </details>
 
 <details>
