@@ -86,6 +86,8 @@ Como resultado, você terá um código bastante sujo, repleto de condicionais qu
   ## Quando devemos aplicar?
   quando?
 
+  - Utilize a classe Adaptador quando você quer usar uma classe existente, mas sua interface não for compatível com o resto do seu código.
+
 </details>
 
 <details>
