@@ -100,11 +100,22 @@ Em algum ponto, você decide melhorar a aplicação ao integrar uma biblioteca d
   <summary>Padrões comportamentais</summary>
   
   # Observer
-  O Observer...
+  
+  O Observer é um padrão de projeto comportamental que permite que você defina um mecanismo de assinatura para notificar múltiplos objetos sobre quaisquer eventos que aconteçam com o objeto que eles estão observando.
+  
+  ![](https://refactoring.guru/images/patterns/content/observer/observer.png?id=6088e31e1b0d4a417506a66614dcf065)
 
   ## Problema / Motivação
 
-  Imagine ...
+  Imagine que você tem dois tipos de objetos: um Cliente e uma Loja. O cliente está muito interessado em uma marca particular de um produto (digamos que seja um novo modelo de iPhone) que logo deverá estar disponível na loja.
+
+O cliente pode visitar a loja todos os dias e checar a disponibilidade do produto. Mas enquanto o produto ainda está a caminho, a maioria desses visitas serão em vão.
+  
+  ![](https://refactoring.guru/images/patterns/content/observer/observer-comic-1-pt-br.png?id=adfe141b54d9d26143d611158896597b)
+  
+  Por outro lado, a loja poderia mandar milhares de emails (que poderiam ser considerados como spam) para todos os clientes cada vez que um novo produto se torna disponível. Isso salvaria alguns clientes de incontáveis viagens até a loja. Porém, ao mesmo tempo, irritaria outros clientes que não estão interessados em novos produtos.
+
+Parece que temos um conflito. Ou o cliente gasta tempo verificando a disponibilidade do produto ou a loja gasta recursos notificando os clientes errados.
 
   ## Solução
 
@@ -115,11 +126,24 @@ Em algum ponto, você decide melhorar a aplicação ao integrar uma biblioteca d
   Quando?...
   
   # Visitor
-  O Visitor...
+  
+  O Visitor é um padrão de projeto comportamental que permite que você separe algoritmos dos objetos nos quais eles operam.
 
   ## Problema / Motivação
 
-  Imagine ...
+  Imagine que sua equipe desenvolve uma aplicação que funciona com informações geográficas estruturadas em um grafo. Cada vértice do gráfico pode representar uma entidade complexa como uma cidade, mas também coisas mais granulares como indústrias, lugares turísticos, etc. Os vértices estão conectados entre si se há uma estrada entre os objetos reais que eles representam. Por debaixo dos panos, cada tipo de vértice é representado por sua própria classe, enquanto que cada vértice específico é um objeto.
+  
+  ![](https://refactoring.guru/images/patterns/diagrams/visitor/problem1.png?id=e7076532da1e936f3519c63270da8454)
+  
+  - Em algum momento você tem uma tarefa de implementar a exportação do grafo para o formato XML.
+  - Adicionar um método de exportação para cada classe nó e então uma alavancagem recursiva para ir a cada nó do grafo, executando o método de exportação.
+  - A solução foi simples e elegante: graças ao polimorfismo, você não estava acoplando o código que chamava o método de exportação com as classes concretas dos nós.
+  
+  ![](https://refactoring.guru/images/patterns/diagrams/visitor/problem2-pt-br.png?id=d9e4c49f761f851a6139a4b65df1a217)
+  
+  - Faria sentido ter um código de exportação XML dentro das classes nó?
+  - O trabalho primário dessas classes era trabalhar com dados geográficos. O comportamento de exportação XML ficaria estranho ali.
+  - E se fosse solicitado que os dados também fossem exportados para Json?
 
   ## Solução
 
