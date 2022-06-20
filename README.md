@@ -99,6 +99,36 @@ Em algum ponto, você decide melhorar a aplicação ao integrar uma biblioteca d
 <details>
   <summary>Padrões comportamentais</summary>
   
+  # Observer
+  O Observer...
+
+  ## Problema / Motivação
+
+  Imagine ...
+
+  ## Solução
+
+  Ele é um ...
+
+  ## Quando devemos aplicar?
+  
+  Quando?...
+  
+  # Visitor
+  O Visitor...
+
+  ## Problema / Motivação
+
+  Imagine ...
+
+  ## Solução
+
+  Ele é um ...
+
+  ## Quando devemos aplicar?
+  
+  Quando?...
+  
 </details>
 
 
