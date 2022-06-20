@@ -119,7 +119,26 @@ Parece que temos um conflito. Ou o cliente gasta tempo verificando a disponibili
 
   ## Solução
 
-  Ele é um ...
+  Um determinado objeto notificará outros objetos sobre as mudanças em seu estado, sendo chamado de *sujeito* ou *publicador*.
+  O padrão Observer sugere um mecanismo para assinar ou cancelar um publicador, sendo construído da seguinte forma:
+  1) uma lista para armazenar os assinantes
+  2) métodos públicos que permitem adicionar ou remover da lista.
+
+  ![](https://refactoring.guru/images/patterns/diagrams/observer/solution1-pt-br.png)
+
+  Agora, sempre que um evento importante acontece com a publicadora, ele passa para seus assinantes e chama um método específico 
+  de notificação em seus objetos.
+
+  Todos os assinantes devem implementar a mesma interface, para que o publicador comunique-se com eles apenas através daquela interface.
+
+  ![](https://refactoring.guru/images/patterns/diagrams/observer/structure.png)
+
+  **Analogia com a realidade**
+
+  Se você assinar um jornal ou uma revista, você não vai mais precisar ir até a banca e ver se a próxima edição está disponível. 
+  Ao invés disso a editora manda novas edições diretamente para sua caixa de correio após a publicação.
+
+  ![](https://refactoring.guru/images/patterns/content/observer/observer-comic-2-pt-br.png)
 
   ## Quando devemos aplicar?
   
