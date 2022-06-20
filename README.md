@@ -126,7 +126,7 @@ Parece que temos um conflito. Ou o cliente gasta tempo verificando a disponibili
 
   ![](https://refactoring.guru/images/patterns/diagrams/observer/solution1-pt-br.png)
 
-  Agora, sempre que um evento importante acontece com a publicadora, ele passa para seus assinantes e chama um método específico 
+  Agora, sempre que um evento importante acontece com o publicador, ele passa para seus assinantes e chama um método específico 
   de notificação em seus objetos.
 
   Todos os assinantes devem implementar a mesma interface, para que o publicador comunique-se com eles apenas através daquela interface.
