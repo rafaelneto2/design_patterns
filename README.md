@@ -142,8 +142,23 @@ Parece que temos um conflito. Ou o cliente gasta tempo verificando a disponibili
 
   ## Quando devemos aplicar?
   
-  Quando?...
+  - Utilize o padrão Observer quando mudanças no estado de um objeto podem precisar mudar outros objetos, e o atual conjunto de objetos é desconhecido de antemão ou muda dinamicamente.
+  - Utilize o padrão quando alguns objetos em sua aplicação devem observar outros, mas apenas por um tempo limitado ou em casos específicos.
+
+  ## Prós e Contras
+
+  Prós
+
+  - Princípio aberto/fechado. Você pode introduzir novas classes assinantes sem ter que mudar o código da publicadora.
   
+  - Você pode estabelecer relações entre objetos durante a execução.
+
+  - Facilidade em tornar funcionalidades assíncronas
+
+  Contras 
+
+  - Assinantes são notificados em ordem aleatória
+
   # Visitor
   
   O Visitor é um padrão de projeto comportamental que permite que você separe algoritmos dos objetos nos quais eles operam.
