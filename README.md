@@ -200,7 +200,9 @@ Parece que temos um conflito. Ou o cliente gasta tempo verificando a disponibili
 
   ## Quando devemos aplicar?
   
-  Quando?...
+  - Utilize o Visitor quando você precisa fazer uma operação em todos os elementos de uma estrutura de objetos complexa.
+  - Utilize o Visitor para limpar a lógica de negócio de comportamentos auxiliares.
+  - Utilize o padrão quando um comportamento faz sentido apenas dentro de algumas classes de uma uma hierarquia de classe, mas não em outras.
   
 </details>
 
