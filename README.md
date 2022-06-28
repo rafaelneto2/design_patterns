@@ -181,7 +181,22 @@ Parece que temos um conflito. Ou o cliente gasta tempo verificando a disponibili
 
   ## Solução
 
-  Ele é um ...
+  O padrão Visitor sugere que você coloque o novo comportamento em uma classe separada chamada **visitante**, 
+  ao invés de tentar integrá-lo em classes já existentes. O objeto original que teve que fazer o 
+  comportamento é agora passado para um dos métodos da visitante como um argumento, desde que o método 
+  acesse todos os dados necessários contidos dentro do objeto.
+
+  Com isso, a classe **visitante** deve definir um conjunto de métodos, cada um capaz de receber argumentos 
+  de diferentes tipos. Esses métodos têm diferentes assinaturas, então não podemos usar o *polimorfismo*. 
+  Para escolher um método visitante apropriado que seja capaz de processar um dado objeto, devemos 
+  checar a classe dele.
+
+  O padrão Visitor usa uma técnica chamada **Double Dispatch**, que ajuda a executar o método apropriado 
+  de um objeto sem precisarmos de condicionais pesadas.
+
+  ![](https://refactoring.guru/images/patterns/diagrams/visitor/structure-pt-br.png)
+
+  ![](https://refactoring.guru/images/patterns/diagrams/visitor/example.png)
 
   ## Quando devemos aplicar?
   
