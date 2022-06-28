@@ -203,6 +203,17 @@ Parece que temos um conflito. Ou o cliente gasta tempo verificando a disponibili
   - Utilize o Visitor quando você precisa fazer uma operação em todos os elementos de uma estrutura de objetos complexa.
   - Utilize o Visitor para limpar a lógica de negócio de comportamentos auxiliares.
   - Utilize o padrão quando um comportamento faz sentido apenas dentro de algumas classes de uma uma hierarquia de classe, mas não em outras.
+
+  ## Prós e Contras
+
+  Prós
+
+  - Princípio aberto/fechado. Você pode introduzir um novo comportamento que pode funcionar com objetos de diferentes classes sem mudar essas classes.
+  - Princípio de responsabilidade única. Você pode mover múltiplas versões do mesmo comportamento para dentro da mesma classe.
+
+  Contras
+
+  - Você precisa atualizar todos os visitantes a cada vez que a classe é adicionada ou removida da hierarquia de elementos.
   
 </details>
 
